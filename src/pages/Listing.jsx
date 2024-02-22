@@ -122,24 +122,6 @@ function Listing() {
             alt="listing image"
             className="w-3/4 h-3/4 object-contain mb-2 mt-2 border rounded-lg"
           />
-
-          <img
-            src={listing.imageURL}
-            alt="listing image"
-            className="w-3/4 h-3/4 object-contain mb-2 mt-2 border rounded-lg"
-          />
-
-          <img
-            src={listing.imageURL}
-            alt="listing image"
-            className="w-3/4 h-3/4 object-contain mb-2 mt-2 border rounded-lg"
-          />
-
-          <img
-            src={listing.imageURL}
-            alt="listing image"
-            className="w-3/4 h-3/4 object-contain mb-2 mt-2 border rounded-lg"
-          />
         </div>
       </div>
       )}
