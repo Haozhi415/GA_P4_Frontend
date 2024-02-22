@@ -12,12 +12,14 @@ import UpdateListing from './pages/UpdateListing';
 import Listing from './pages/Listing';
 import SearchResults from './pages/SearchResults';
 import AdminPanel from './pages/AdminPanel';
+import Test from './pages/Test';
 
 function App() {
-  return( 
+  return(
   <BrowserRouter>
   <Header />
   <Routes>
+    <Route path="/test" element={<Test />} />
     <Route path="/" element={<Home />} />
     <Route path="/signin" element={<SignIn />} />
     <Route path="/signup" element={<SignUp />} />

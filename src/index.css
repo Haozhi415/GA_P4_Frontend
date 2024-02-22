@@ -3,5 +3,26 @@
 @tailwind utilities;
 
 body {
-    background-color: rgb(241, 245, 241);
+    background-color: rgb(226, 232, 240);
+    min-height: 100vh;
+}
+
+.result-card-price-container {
+    width: 200px; /* Adjust the width as needed */
+    overflow: hidden;
+}
+
+.result-card-name-container {
+    width: 200px; /* Adjust the width as needed */
+    overflow: hidden;
+}
+
+.admin-card-name-container {
+    width: 400px; /* Adjust the width as needed */
+    overflow: hidden;
+}
+
+.user-card-name-container {
+    width: 350px; /* Adjust the width as needed */
+    overflow: hidden;
 }
