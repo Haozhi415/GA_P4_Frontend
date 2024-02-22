@@ -61,7 +61,7 @@ function Home() {
       <div>
         <div className="flex flex-wrap">
           {listings.length === 0 && (
-            <p className="text-blue-800 text-xl mt-2">No listings found.</p>
+            <p className="text-white text-xl ml-4 mt-2">No listings found.</p>
           )}
 
           
