@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <div className='flex flex-col min-h-screen' style={{ 
-      backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.keyrealestates.com%2Fcms%2Fwp-content%2Fuploads%2F2018%2F10%2Fmarbella-luxury-villas-for-sale-1920x1281.jpg&f=1&nofb=1&ipt=563a5ab571ba2903ddb3a0d28b290d40e547c866bc4995507d18ea9f62c4e16c&ipo=images')`,
+      backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblueskyluxurytravels.com%2Fvillas%2Fbvi%2Fthe-beach-house%2Ffiles%2F001bvi21.jpg&f=1&nofb=1&ipt=89a81ac165867dee70c9fbd9014865a36baf5dced971e5139cd423141cb08137&ipo=images')`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
