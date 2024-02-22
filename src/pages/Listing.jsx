@@ -73,7 +73,7 @@ function Listing() {
             <p className="text-slate-700 mb-4 block break-words">{listing.description}</p>
           </div>
 
-          <ul className="text-green-700 font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6 mb-4">
+          <ul className="text-slate-700 font-semibold text-sm flex flex-wrap items-center gap-4 sm:gap-6 mb-4">
             <li className="flex items-center gap-1 whitespace-nowrap ">
               <FaBed />
               {listing.bedrooms > 1
@@ -99,7 +99,7 @@ function Listing() {
           <div className="pb-4">
             {(!currentUser || (currentUser && listing.userRef !== currentUser._id)) && !contact && (
             <div>
-            <p className="text-red-600 text-xl font-semibold mb-2">
+            <p className="text-blue-700 text-xl font-semibold mb-2">
               Interested? Contact the seller NOW!
             </p>
             <button
