@@ -41,7 +41,7 @@ function Home() {
         <h1 className='text-5xl text-cyan-400 font-bold mt-4 ml-2'>Home</h1>
         <h1 className='text-5xl text-blue-800 font-bold mt-4'>Harbor</h1>
         </div>
-        <p className=' text-white mt-4 ml-4 pb-5'>
+        <p className=' text-blue-700 mt-4 ml-4 pb-5'>
         Your gateway to discovering the perfect property. Dive into our curated selection of homes, apartments, and villas, tailored to meet your unique needs and preferences.
         </p>
       </div>
