@@ -29,8 +29,10 @@ function Home() {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
-      backgroundAttachment: 'fixed'
+      backgroundAttachment: 'fixed',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)' // Adjust the opacity level (0.5 in this example)
     }}>
+    
     
       {/* top */}
       <div className='flex flex-col'>
