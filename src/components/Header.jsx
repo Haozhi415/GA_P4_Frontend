@@ -13,7 +13,7 @@ function Header() {
         {/* Left */}
         <Link to="/">
         <h1 className='font-bold flex ml-2'>
-            <span className='text-cyan-400 text-2xl'>Home</span>
+            <span className='text-purple-700 text-2xl'>Home</span>
             <span className='text-blue-800 text-2xl'>Harbor</span>
         </h1>
         </Link>

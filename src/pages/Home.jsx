@@ -42,7 +42,7 @@ function Home() {
           <h1 className="text-5xl text-white font-bold mt-4 ml-4">
             Welcome to
           </h1>
-          <h1 className="text-5xl text-cyan-400 font-bold mt-4 ml-2">Home</h1>
+          <h1 className="text-5xl text-purple-700 font-bold mt-4 ml-2">Home</h1>
           <h1 className="text-5xl text-blue-800 font-bold mt-4">Harbor</h1>
         </div>
         <p className=" text-blue-700 mt-4 ml-4 pb-5">
