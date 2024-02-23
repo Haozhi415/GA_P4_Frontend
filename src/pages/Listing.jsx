@@ -69,7 +69,7 @@ function Listing() {
               </div>
             )}
 
-            <div className="flex flex-col">
+            <div className="flex flex-col mt-4">
               <p className="text-slate-700 text-xl font-semibold">
                 Description:
               </p>
