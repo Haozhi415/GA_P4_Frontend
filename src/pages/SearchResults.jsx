@@ -42,7 +42,7 @@ function SearchResults() {
     const fetchListings = async () => {
       const searchQuery = urlParams.toString();
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/listing/getAll?${searchQuery}`
+        `http://localhost:3000/listing/getAll?${searchQuery}`
       );
       const data = await response.json();
       setListings(data);
@@ -159,7 +159,7 @@ function SearchResults() {
             </div>
 
             <div className="mb-4">
-            <p className="font-semibold">Discount: </p>
+              <p className="font-semibold">Discount: </p>
               <div className="flex flex-row items-center">
                 <input
                   type="checkbox"
@@ -203,13 +203,13 @@ function SearchResults() {
             </div>
           </div>
 
-          <button className="btn btn-accent">
-            SEARCH
-          </button>
+          <button className="btn btn-accent">SEARCH</button>
         </form>
       </div>
       <div>
-        <h1 className="text-blue-800 font-semibold text-2xl mb-2">Search Results:</h1>
+        <h1 className="text-blue-800 font-semibold text-2xl mb-2">
+          Search Results:
+        </h1>
         <div className="flex flex-wrap">
           {listings.length === 0 && (
             <p className="text-blue-800 text-xl mt-2">No listings found.</p>

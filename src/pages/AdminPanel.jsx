@@ -8,7 +8,7 @@ function AdminPanel() {
 
   useEffect(() => {
     const fetchListing = async () => {
-      const response = await fetch("https://ga-p4-backend.onrender.com/listing/getAll");
+      const response = await fetch("http://localhost:3000/listing/getAll");
       const data = await response.json();
       console.log(data);
       setListings(data);
@@ -20,7 +20,7 @@ function AdminPanel() {
   const handleDeleteListing = async (listingId) => {
     try {
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/listing/delete/${listingId}`,
+        `http://localhost:3000/listing/delete/${listingId}`,
         {
           method: "DELETE",
           credentials: "include",
@@ -48,7 +48,9 @@ function AdminPanel() {
 
   return (
     <div className="bg-slate-200 mt-4 min-h-screen min-w-screen mx-auto flex flex-col">
-      <h1 className="text-blue-700 text-3xl font-bold text-center mb-4">Admin Panel</h1>
+      <h1 className="text-blue-700 text-3xl font-bold text-center mb-4">
+        Admin Panel
+      </h1>
 
       <div className="flex flex-col items-center">
         {listings &&
@@ -69,8 +71,10 @@ function AdminPanel() {
                 to={`/listing/${listing._id}`}
                 className="text-center hover:underline truncate flex-1"
               >
-                <div className='admin-card-name-container'>
-                <p className="font-semibold truncate text-center pl-11">{listing.name}</p>
+                <div className="admin-card-name-container">
+                  <p className="font-semibold truncate text-center pl-11">
+                    {listing.name}
+                  </p>
                 </div>
               </Link>
 

@@ -30,7 +30,7 @@ function Profile() {
     evt.preventDefault();
     try {
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/user/update/${currentUser._id}`,
+        `http://localhost:3000/user/update/${currentUser._id}`,
         {
           method: "POST",
           credentials: "include",
@@ -59,7 +59,7 @@ function Profile() {
   const handleDeleteUser = async () => {
     try {
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/user/delete/${currentUser._id}`,
+        `http://localhost:3000/user/delete/${currentUser._id}`,
         {
           method: "DELETE",
           credentials: "include",
@@ -85,7 +85,7 @@ function Profile() {
 
   const handleSignOut = async () => {
     try {
-      const response = await fetch(`https://ga-p4-backend.onrender.com/auth/signout`, {
+      const response = await fetch(`http://localhost:3000/auth/signout`, {
         method: "GET",
         credentials: "include",
         headers: {
@@ -112,7 +112,7 @@ function Profile() {
     try {
       setShowListingError(false);
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/user/listings/${currentUser._id}`,
+        `http://localhost:3000/user/listings/${currentUser._id}`,
         {
           method: "GET",
           credentials: "include",
@@ -140,7 +140,7 @@ function Profile() {
   const handleDeleteListing = async (listingId) => {
     try {
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/listing/delete/${listingId}`,
+        `http://localhost:3000/listing/delete/${listingId}`,
         {
           method: "DELETE",
           credentials: "include",
@@ -168,7 +168,9 @@ function Profile() {
 
   return (
     <div className="p-3 max-w-lg mx-auto">
-      <h1 className="text-blue-700 text-3xl font-bold text-center mb-4">{currentUser.username}'s Profile</h1>
+      <h1 className="text-blue-700 text-3xl font-bold text-center mb-4">
+        {currentUser.username}'s Profile
+      </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
         <input
@@ -197,11 +199,7 @@ function Profile() {
           className="input input-bordered input-accent w-full mb-2"
         />
 
-        <button className="btn btn-primary">
-          Update Info
-        </button>
-
-        
+        <button className="btn btn-primary">Update Info</button>
       </form>
 
       <div className="flex justify-between mt-4">
@@ -223,17 +221,11 @@ function Profile() {
         {updateSuccess && "Profile updated successfully!"}
       </p>
 
-      <Link
-        className="btn btn-accent w-full mb-2 mt-4"
-        to={"/create-listing"}
-      >
+      <Link className="btn btn-accent w-full mb-2 mt-4" to={"/create-listing"}>
         Create Listing
       </Link>
 
-      <button
-        onClick={handleShowListing}
-        className="btn btn-info w-full"
-      >
+      <button onClick={handleShowListing} className="btn btn-info w-full">
         View my listings
       </button>
 
@@ -259,8 +251,8 @@ function Profile() {
               to={`/listing/${listing._id}`}
               className="text-center font-semibold hover:underline truncate flex-1"
             >
-              <div className='user-card-name-container'>
-              <p className="truncate text-center pl-11">{listing.name}</p>
+              <div className="user-card-name-container">
+                <p className="truncate text-center pl-11">{listing.name}</p>
               </div>
             </Link>
 

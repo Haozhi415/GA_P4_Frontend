@@ -20,7 +20,7 @@ function SignUp() {
     evt.preventDefault();
 
     try {
-      const response = await fetch("https://ga-p4-backend.onrender.com/auth/signup", {
+      const response = await fetch("http://localhost:3000/auth/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,9 @@ function SignUp() {
 
   return (
     <div className="p-3 max-w-lg mx-auto min-h-screen">
-      <h1 className="text-blue-700 text-3xl text-center font-semibold mt-4 mb-2">SignUp</h1>
+      <h1 className="text-blue-700 text-3xl text-center font-semibold mt-4 mb-2">
+        SignUp
+      </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col">
         <input
@@ -70,9 +72,7 @@ function SignUp() {
           onChange={handleChange}
         />
 
-        <button className="btn btn-primary">
-          Sign Up
-        </button>
+        <button className="btn btn-primary">Sign Up</button>
       </form>
 
       <div>{error && <p className="text-red-500">{error}</p>}</div>

@@ -69,7 +69,7 @@ function CreateListing() {
 
       setError(false);
 
-      const response = await fetch("https://ga-p4-backend.onrender.com/listing/create", {
+      const response = await fetch("http://localhost:3000/listing/create", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -97,7 +97,9 @@ function CreateListing() {
 
   return (
     <main>
-      <h1 className="text-blue-700 text-3xl font-bold text-center mt-4">Create a listing</h1>
+      <h1 className="text-blue-700 text-3xl font-bold text-center mt-4">
+        Create a listing
+      </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto">
         <input

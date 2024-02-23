@@ -36,7 +36,7 @@ function UpdateListing() {
       const listingId = params.listingId;
       console.log(listingId);
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/listing/get/${listingId}`
+        `http://localhost:3000/listing/get/${listingId}`
       );
       const data = await response.json();
       setFormData(data);
@@ -90,7 +90,7 @@ function UpdateListing() {
       const listingId = params.listingId;
 
       const response = await fetch(
-        `https://ga-p4-backend.onrender.com/listing/update/${listingId}`,
+        `http://localhost:3000/listing/update/${listingId}`,
         {
           method: "POST",
           credentials: "include",
@@ -121,7 +121,9 @@ function UpdateListing() {
 
   return (
     <main>
-      <h1 className="text-blue-700 text-3xl font-bold text-center mt-4">Update listing</h1>
+      <h1 className="text-blue-700 text-3xl font-bold text-center mt-4">
+        Update listing
+      </h1>
 
       <form onSubmit={handleSubmit} className="flex flex-col max-w-lg mx-auto">
         <input

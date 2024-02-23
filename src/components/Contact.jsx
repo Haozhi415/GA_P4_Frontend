@@ -15,7 +15,7 @@ function Contact({ listing }) {
     const fetchSeller = async () => {
       try {
         const response = await fetch(
-          `https://ga-p4-backend.onrender.com/user/get/${listing.userRef}`,
+          `http://localhost:3000/user/get/${listing.userRef}`,
           {
             method: "GET",
             credentials: "include",
@@ -55,7 +55,7 @@ function Contact({ listing }) {
           ></textarea>
 
           <Link
-          to={`mailto:${seller.email}?subject=Regarding ${listing.name}&body=${message}`}
+            to={`mailto:${seller.email}?subject=Regarding ${listing.name}&body=${message}`}
           >
             <button className="btn btn-accent mt-2">Send Your Message</button>
           </Link>
