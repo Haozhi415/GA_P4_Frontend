@@ -29,7 +29,8 @@ function SignUp() {
       });
       const data = await response.json();
       if (data.success === false) {
-        setError(data.message);
+        console.log(data.message);
+        setError("Sign Up failed.");
         return;
       } else {
         setError(null);
