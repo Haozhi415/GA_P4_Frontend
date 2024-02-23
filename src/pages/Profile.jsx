@@ -30,7 +30,7 @@ function Profile() {
     evt.preventDefault();
     try {
       const response = await fetch(
-        `http://localhost:3000/user/update/${currentUser._id}`,
+        `https://ga-p4-backend.onrender.com/user/update/${currentUser._id}`,
         {
           method: "POST",
           credentials: "include",
@@ -59,7 +59,7 @@ function Profile() {
   const handleDeleteUser = async () => {
     try {
       const response = await fetch(
-        `http://localhost:3000/user/delete/${currentUser._id}`,
+        `https://ga-p4-backend.onrender.com/user/delete/${currentUser._id}`,
         {
           method: "DELETE",
           credentials: "include",
@@ -85,7 +85,7 @@ function Profile() {
 
   const handleSignOut = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/auth/signout`, {
+      const response = await fetch(`https://ga-p4-backend.onrender.com/auth/signout`, {
         method: "GET",
         credentials: "include",
         headers: {
@@ -112,7 +112,7 @@ function Profile() {
     try {
       setShowListingError(false);
       const response = await fetch(
-        `http://localhost:3000/user/listings/${currentUser._id}`,
+        `https://ga-p4-backend.onrender.com/user/listings/${currentUser._id}`,
         {
           method: "GET",
           credentials: "include",
@@ -140,7 +140,7 @@ function Profile() {
   const handleDeleteListing = async (listingId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/listing/delete/${listingId}`,
+        `https://ga-p4-backend.onrender.com/listing/delete/${listingId}`,
         {
           method: "DELETE",
           credentials: "include",

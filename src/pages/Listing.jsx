@@ -20,7 +20,7 @@ function Listing() {
       const listingId = params.listingId;
       console.log(listingId);
       const response = await fetch(
-        `http://localhost:3000/listing/get/${listingId}`
+        `https://ga-p4-backend.onrender.com/listing/get/${listingId}`
       );
       const data = await response.json();
       console.log(data);

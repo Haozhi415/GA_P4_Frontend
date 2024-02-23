@@ -15,7 +15,7 @@ function Contact({ listing }) {
     const fetchSeller = async () => {
       try {
         const response = await fetch(
-          `http://localhost:3000/user/get/${listing.userRef}`,
+          `https://ga-p4-backend.onrender.com/user/get/${listing.userRef}`,
           {
             method: "GET",
             credentials: "include",

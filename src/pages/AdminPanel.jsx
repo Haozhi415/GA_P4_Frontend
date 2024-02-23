@@ -8,7 +8,7 @@ function AdminPanel() {
 
   useEffect(() => {
     const fetchListing = async () => {
-      const response = await fetch("http://localhost:3000/listing/getAll");
+      const response = await fetch("https://ga-p4-backend.onrender.com/listing/getAll");
       const data = await response.json();
       console.log(data);
       setListings(data);
@@ -20,7 +20,7 @@ function AdminPanel() {
   const handleDeleteListing = async (listingId) => {
     try {
       const response = await fetch(
-        `http://localhost:3000/listing/delete/${listingId}`,
+        `https://ga-p4-backend.onrender.com/listing/delete/${listingId}`,
         {
           method: "DELETE",
           credentials: "include",

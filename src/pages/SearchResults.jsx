@@ -42,7 +42,7 @@ function SearchResults() {
     const fetchListings = async () => {
       const searchQuery = urlParams.toString();
       const response = await fetch(
-        `http://localhost:3000/listing/getAll?${searchQuery}`
+        `https://ga-p4-backend.onrender.com/listing/getAll?${searchQuery}`
       );
       const data = await response.json();
       setListings(data);

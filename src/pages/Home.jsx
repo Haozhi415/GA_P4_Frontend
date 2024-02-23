@@ -10,7 +10,7 @@ function Home() {
   useEffect(() => {
     const fetchListings = async () => {
       const response = await fetch(
-        "http://localhost:3000/listing/getAll?offer=true"
+        "https://ga-p4-backend.onrender.com/listing/getAll?offer=true"
       );
       const data = await response.json();
 

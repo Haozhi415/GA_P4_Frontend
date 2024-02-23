@@ -69,7 +69,7 @@ function CreateListing() {
 
       setError(false);
 
-      const response = await fetch("http://localhost:3000/listing/create", {
+      const response = await fetch("https://ga-p4-backend.onrender.com/listing/create", {
         method: "POST",
         credentials: "include",
         headers: {
