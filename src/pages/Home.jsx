@@ -61,7 +61,7 @@ function Home() {
       </div>
 
       {/* listing */}
-      <p className="text-white text-xl font-semibold mt-4 ml-4 mb-2">
+      <p className="text-blue-700 text-xl font-semibold mt-4 ml-4 mb-2">
         Our Hot Offers:
       </p>
       <div>
