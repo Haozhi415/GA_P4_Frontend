@@ -1,8 +1,60 @@
-# React + Vite
+# Welcome to HomeHarbor!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **HomeHarbor**, your gateway to discovering the perfect property. Dive into our curated selection of homes, apartments, and villas, tailored to meet your unique needs and preferences.
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Homepage**
+
+<img src="/src/assets/images/homepage.png">
+
+**Login Page**
+
+<img src="/src/assets/images/login.png">
+
+**Create a Property Listing**
+
+<img src="/src/assets/images/createlisting.png">
+
+**View/Search Recipes**
+
+<img src="/src/assets/images/search.png">
+
+## Technologies Used
+
+**Frontend**: JavaScript, CSS, HTML, GitHub, Node.js, React, React Router, Vite, Tailwind CSS/DaisyUI, Redux
+
+**Backend**: Node.js, Express, Mongoose, MongoDB, JSON Web Token, Cors, Bcrypt
+
+## Getting Started
+
+Web link: https://ga-p4-frontend.onrender.com
+
+Repos:
+
+- Frontend: https://github.com/Haozhi415/GA_P4_Frontend
+- Backend: https://github.com/Haozhi415/GA_P4_Backend
+
+Planning:
+
+- [Trello Board](https://trello.com/b/F3W9X2ch/p4)
+
+## Entity-Relationship-Diagram
+
+<img src="/src/assets/images/ERD.png">
+
+## Next Steps
+
+- Admin user can delete other user accounts.
+- Sorting function search page.
+
+## Favorite React Component
+
+My favourite feature was the ability to email the listing poster through a click of a button.
+
+<img src="/src/assets/images/email_button.png">
+
+## Key Challenges / Learning / Takeaways
+
+1. User authentication part.
+2. Always start early.
