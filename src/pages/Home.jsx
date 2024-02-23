@@ -28,7 +28,7 @@ function Home() {
     <div
       className="flex flex-col min-h-screen"
       style={{
-        backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblueskyluxurytravels.com%2Fvillas%2Fbvi%2Fthe-beach-house%2Ffiles%2F001bvi21.jpg&f=1&nofb=1&ipt=89a81ac165867dee70c9fbd9014865a36baf5dced971e5139cd423141cb08137&ipo=images')`,
+        backgroundImage: `url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fd33wubrfki0l68.cloudfront.net%2F63210059410615648f4dd5679e4df4d77e62d226%2F3ca89%2Fhomepage-header%2F01%2Fmy-private-villas-luxury-rentals-691751112_hu1c976dd42afe38601f1d7d04f876b725_165311_1900x0_resize_q90_lanczos.jpg&f=1&nofb=1&ipt=379b9fad734af0f12258a52951b32c777a533f4149f317c18d6b214fc3b824f3&ipo=images')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
