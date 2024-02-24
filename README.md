@@ -48,6 +48,12 @@ Planning:
 - Admin user can delete other user accounts.
 - Sorting function search page.
 
+## Favorite Server Controller
+
+My favourite feature was the ability for admin to delete listings.
+
+<img src="/src/assets/images/deletelisting.png">
+
 ## Favorite React Component
 
 My favourite feature was the ability to email the listing poster through a click of a button.
